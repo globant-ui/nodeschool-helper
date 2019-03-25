@@ -8,7 +8,9 @@
     "globant-nodeschool": "bin/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "license": "ISC",
   "dependencies": {

@@ -32,13 +32,16 @@ async function foo (action) {
       break
 
     default:
-      console.log('There is no action for this command. Please run "globant-nodeschool -h" for help.')
+      console.log('\x1b[41m%s\x1b[0m','There is no action for this command. Please run "globant-nodeschool -h" for help.')
       process.exit(1)
   }
 }
 
 function startWorkshop (workshop) {
-  console.log('Opening README on browser...')
+  console.log('\x1b[35m%s\x1b[0m', 'Remember that all the global packages and the directories for your exercises were installed and created. \nYou don\'t need to install them again.')
+  console.log('\x1b[35m%s\x1b[0m', 'Go to the exercise directory and create your code inside.')
+  console.log('\x1b[35m%s\x1b[0m', 'Good luck!')
+  console.log('\x1b[36m%s\x1b[0m', 'Opening README on browser...')
   switch (workshop) {
     case 'Javascripting':
       opn('https://github.com/workshopper/javascripting#run-the-workshop')

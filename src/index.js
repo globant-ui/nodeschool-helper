@@ -33,6 +33,7 @@ async function foo (action) {
 
     default:
       console.log('There is no action for this command. Please run "globant-nodeschool -h" for help.')
+      process.exit(1)
       break
   }
 }
@@ -84,6 +85,7 @@ function startWorkshop (workshop) {
       opn('https://github.com/workshopper/scope-chains-closures#getting-started')
       break
   }
+  process.exit(0)
 }
 
 module.exports = foo

@@ -11,17 +11,16 @@ const selectList = [{
     { name: 'Javascripting' },
     { name: 'Learnyounode' },
     { name: 'How to npm' },
-    { name: 'Elementary electron' },
+    { name: 'Elementary Electron' },
     { role: 'separator' },
     { name: 'Intermediate', disabled: '' },
-    { name: 'Functional Programming' },
-    { name: 'Express' },
-    { name: 'Promises' },
-    { name: 'Async/Await' },
-    { name: 'Prototype' },
-    { name: 'ES6' },
-    { name: 'Scoping' },
-    { role: 'separator' }
+    { name: 'Functional Javascript' },
+    { name: 'Express Works' },
+    { name: 'Promise It Wont Hurt' },
+    { name: 'Async you' },
+    { name: 'Planet Proto' },
+    { name: 'Tower of Babel' },
+    { name: 'Scope, Chains & Closures' }
   ]
 }]
 
@@ -49,7 +48,40 @@ function startWorkshop (workshop) {
       opn('https://github.com/workshopper/learnyounode#learn-you-the-nodejs-for-much-win')
       break
 
-    default:
+    case 'How to npm':
+      opn('https://github.com/workshopper/how-to-npm#usage')
+      break
+
+    case 'Elementary Electron':
+      opn('https://github.com/maxogden/elementary-electron#elementary-electron')
+      break
+
+    case 'Functional Javascript':
+      opn('https://github.com/timoxley/functional-javascript-workshop#usage-instructions')
+      break
+
+    case 'Express Works':
+      opn('https://github.com/azat-co/expressworks#expressworks')
+      break
+
+    case 'Promise It Wont Hurt':
+      opn('https://github.com/stevekane/promise-it-wont-hurt#usage-instructions')
+      break
+
+    case 'Async you':
+      opn('https://github.com/bulkan/async-you#usage')
+      break
+
+    case 'Planet Proto':
+      opn('https://github.com/sporto/planetproto#usage-instructions')
+      break
+
+    case 'Tower of Babel':
+      opn('https://github.com/yosuke-furukawa/tower-of-babel#how-to-use')
+      break
+
+    case 'Scope, Chains & Closures':
+      opn('https://github.com/workshopper/scope-chains-closures#getting-started')
       break
   }
 }

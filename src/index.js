@@ -32,7 +32,7 @@ async function foo (action) {
       break
 
     default:
-      console.log('\x1b[41m%s\x1b[0m','There is no action for this command. Please run "globant-nodeschool -h" for help.')
+      console.log('\x1b[41m%s\x1b[0m', 'There is no action for this command. Please run "globant-nodeschool -h" for help.')
       process.exit(1)
   }
 }
@@ -87,7 +87,11 @@ function startWorkshop (workshop) {
       opn('https://github.com/workshopper/scope-chains-closures#getting-started')
       break
   }
-  process.exit(0)
+
+  /** Hack for kill process on windows */
+  setTimeout(() => {
+    process.exit(0)
+  }, 1000)
 }
 
 module.exports = foo

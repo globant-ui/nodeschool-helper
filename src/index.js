@@ -34,7 +34,6 @@ async function foo (action) {
     default:
       console.log('There is no action for this command. Please run "globant-nodeschool -h" for help.')
       process.exit(1)
-      break
   }
 }
 

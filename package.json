@@ -1,0 +1,30 @@
+{
+  "name": "@globant/nodeschool-helper",
+  "version": "1.0.0",
+  "author": "Gerson Niño <gerson.nino@globant.com>",
+  "description": "CLI helper for the Globant Nodeschool workshops",
+  "main": "index.js",
+  "bin": {
+    "globant-nodeschool": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "enquirer": "^2.3.0",
+    "meow": "^5.0.0",
+    "opn": "^5.5.0",
+    "update-notifier": "^2.5.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "keywords": [
+    "nodeschool",
+    "globant",
+    "meow",
+    "cli",
+    "helper"
+  ]
+}

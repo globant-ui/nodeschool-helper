@@ -1,6 +1,6 @@
 {
   "name": "@globant/nodeschool-helper",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Gerson Niño <gerson.nino@globant.com>",
   "description": "CLI helper for the Globant Nodeschool workshops",
   "main": "index.js",

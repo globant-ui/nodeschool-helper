@@ -1,7 +1,6 @@
 {
   "name": "@globant/nodeschool-helper",
   "version": "1.0.0",
-  "author": "Gerson Niño <gerson.nino@globant.com>",
   "description": "CLI helper for the Globant Nodeschool workshops",
   "main": "index.js",
   "bin": {
@@ -12,7 +11,16 @@
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/globant-ui/nodeschool-helper.git"
+  },
+  "author": "Gerson Niño <gerson.nino@globant.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/globant-ui/nodeschool-helper/issues"
+  },
+  "homepage": "https://github.com/globant-ui/nodeschool-helper#readme",
   "dependencies": {
     "enquirer": "^2.3.0",
     "meow": "^5.0.0",
